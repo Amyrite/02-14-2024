@@ -1,11 +1,11 @@
-songs{
+.songs{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     
 }
-song{
+.song{
     background-color:#CBD5C0;
     width: 280px;
     border-radius: 10px;
@@ -17,7 +17,7 @@ song{
     display: block;
 }
 
-singers{
+.singers{
     background-color: white;
     border-radius: 10px;
     font-size: 20px;
@@ -26,14 +26,14 @@ singers{
     margin-top: 10px;
     
 }
-singers1,singers2{
+.singers1,.singers2{
     display: block;
     text-align: center;
     font-size: 0.8em;
     
 }
 
-singers::before{
+.singers::before{
     content: "____________________________\a "
     "Singers:" ;
     display: block;
@@ -41,7 +41,7 @@ singers::before{
     font-style: italic;
 }
 
-singers1::before{
+.singers1::before{
     content: "1. ";
     font-size: 0.8em;
     font-style: italic;
@@ -83,11 +83,16 @@ singers{
 img {
     width: 10rem;
     height: 10rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     padding: 1rem;
+}
+
+.zebra-row:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 
